@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var firstName = prompt("Please Enter your First Name:")
+
+        var math = parseInt(prompt("Please Enter the grade of math."));
+        var english = parseInt( prompt("Please Enter the grade of english."));
+        var arabic = parseInt( prompt("Please Enter the grade of arabic."));
+        var bio = parseInt( prompt("Please Enter the grade of bio."));
+        var computer = parseInt( prompt("Please Enter the grade of computer."));
+        var religion = parseInt( prompt("Please Enter the grade of religion."));
+        var sum = 0;
+        var avg;
+        sum = math + english + arabic + bio + computer + religion;
+        console.log('sum' + sum);
+
+        avg = sum/6;
+        console.log('avg = '+ avg);
+
+        if (avg >= 50 && avg < 60) {
+            window.alert("Your Result average is: Pass")
+            // console.log('Pass');   
+        }else if (avg >= 60 && avg < 70) {
+            window.alert("Your Result average is: average")
+            // console.log('average');
+        }else if (avg >= 70 && avg < 80) {
+            window.alert("Your Result average is: good")
+            // console.log('good');
+        }else if (avg >= 80 && avg < 90) {
+            window.alert("Your Result average is: very good")
+            // console.log('very good');
+        }else if (avg >= 90 && avg < 100) {
+            window.alert("Your Result average is: Excellent")
+            // console.log('Excellent');
+        }
+
+    </script>
+</body>
+</html>

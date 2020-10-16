@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P>
+        program1: Create a function called oddArray
+    
+        program2: Create a function called aveArray
+    
+        program3: Create a function called factorial
+    </P>
+
+
+<script>
+
+    /******* Start Your Code *********/
+
+    /*
+    var nums= [1,2,3,8,9];
+    
+    function oddArray(nums) {
+        var oddNumber = [];
+        for (let i = 0; i < nums.length; i++) {   
+            if (nums[i]%2 !== 0) {
+                oddNumber.push(nums[i])
+            }
+        }
+    console.log(oddNumber);
+    }
+    oddArray(nums);
+*/
+    //-----Using While loop
+
+    /*
+    function oddArray(nums) {
+        var oddNumber = [];
+        let i = 0;
+        while (i < nums.length) {
+            if (nums[i]%2 !== 0) {
+                oddNumber.push(nums[i])
+            }
+            i++;
+        }
+
+    console.log(oddNumber);
+    }
+    
+    oddArray(nums);
+*/
+    /******* End Your Code ********* */
+
+//**********************************************************************************************
+/******* Start Your Code *********/
+/*
+    var nums= [1,2,3,8,9]
+
+    console.log('=======Use For Loop=======');
+
+    function aveArray(nums) {
+        var avg;
+        var sum = 0;
+        var count = 0;
+        var len = nums.length;
+        for (let i = 0; i < nums.length; i++) {
+            sum += nums[i]
+            count++
+        }
+        console.log(len);
+        console.log(count);
+        avg = sum/len;
+        console.log('The avarage number "Use Forloop" = ' + avg);
+    }
+    aveArray(nums);// => 4.6
+*/
+
+
+/*
+    console.log('=======Use While Loop=======');
+    function aveArray(nums) {
+        var avg;
+        var sum = 0;
+        var count = 0;
+
+        let i = 0;
+        while (i < nums.length) {
+
+            sum += nums[i]
+            count++
+            i++;
+        }
+        console.log(count);
+        avg = sum/count;
+        console.log('The Average number "Use While" = ' + avg);
+    }
+
+    // aveArray(nums);// => 4.6
+*/
+/******* End Your Code ********* */
+
+//******************************************************************************
+
+/******* Start Your Code *********/
+
+    function factorial (n){
+        var fac = 1;
+
+        for (let i = n; i > 0; i--) {
+
+            fac *= i;
+        }
+
+        console.log('factorial (' + n + ') = ' + fac);
+    }
+
+
+factorial(4);
+factorial(2);
+factorial(3);
+
+
+/******* End Your Code ********* */
+
+</script>
+
+</body>
+</html>
